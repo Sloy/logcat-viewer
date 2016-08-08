@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">Logcat Viewer</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <!--<li><a href="#">Link</a></li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Level
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Verbose</a></li>
+                            <li><a href="#">Info</a></li>
+                            <li><a href="#">Debug</a></li>
+                            <li><a href="#">Warning</a></li>
+                            <li><a href="#">Error</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input id="filter-text" type="text" class="form-control" placeholder="Filter">
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container" id="dropzone">
+        <div id="log-output" />
+        <div id="log-input">
+            <div class="col-lg-10">
+                <label for="log-input-text" class="control-label">Input log</label>
+                <textarea class="form-control" rows="3" id="log-input-text"></textarea>
+                <a id="format-button" class="btn btn-primary">Format</a>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        window.$ = window.jQuery = require('./js/jquery.min.js');
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/filereader.js"></script>
+    <script src="./js/logcat.js"></script>
+</body>
+
+</html>

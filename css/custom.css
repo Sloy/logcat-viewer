@@ -1,0 +1,43 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+.container p {
+    margin: 0;
+}
+
+.level-verbose {
+    color: lightgray;
+}
+
+.level-debug {
+    color: #6897BB;
+}
+
+.level-info {
+    color: #6A8759;
+}
+
+.level-warn {
+    color: #BBB529;
+}
+
+.level-error {
+    color: #FF6B68;
+}
+
+.level-assert {
+    color: #9876AA
+}
+
+.drag {
+    background-color: #4cae4c;
+}
